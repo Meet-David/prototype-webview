@@ -23,6 +23,9 @@ const Container = styled.div`
   height: 100vh;
   background: #f8f9fa;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 const Timer = styled.div<{ timeRemaining: number }>`
@@ -50,7 +53,9 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
 `
 
 const ProfileCard = styled.div`
